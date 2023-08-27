@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA DRL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 7% auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2C3E50;
+            font-size: 3em;
+            margin-bottom: 1.5em;
+        }
+
+        .point {
+            margin: 4rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-bottom: 2px solid #eee;
+        }
+
+        .point:hover {
+            background-color: #ecf0f1;
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .img-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .point img:hover {
+            transform: scale(1.05);
+        }
+
+        .intro, .conclusion {
+            background-color: #f4f4f4;
+            padding: 2rem 2rem 1rem;
+        }
+
+        .tech-stack {
+    margin: 2rem 0;
+}
+
+    .tech-stack h3 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+
+    .tech-stack ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .tech-stack li {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: bold;
+        color: #2980b9;
+    }
+
+    .github-link {
+        margin-top: 1rem;
+    }
+
+    .github-link img {
+        width: 60px;  /* Adjust size as needed */
+        height: auto;
+        border-radius: 10%;  /* If you want a circular icon */
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .github-link img:hover {
+        transform: scale(1.6);
+    }
+
+    .tech-stack {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+.tech-stack h3 {
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-stack li {
+    margin: 0.5em 1em;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.tech-stack li:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.cplusplus-icon {
+    background-image: url('path/to/cplusplus-icon.png');
+}
+.yolo-icon {
+    background-image: url('path/to/yolo-icon.png');
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <h1>Deep Reinforcement Learning Hyperparameter Optimization Utilizing Genetic Algorithms</h1>
+            <p>Leveraged genetic algorithm optimization for hyperparameters within OpenAI deep reinforcement learning environments, yielding a significant, albeit variable, enhancement in task convergence speeds. The proposed method is called GA-DRL</p>
+            <div class="tech-stack">
+                <h3>Technology Stack:</h3>
+                <ul>
+                    <li><span class="tech-icon cplusplus-icon"></span>Python</li>
+                    <li><span class="tech-icon yolo-icon"></span>OpenAI Robotic Environments</li>
+                    <li><span class="tech-icon ros-icon"></span>Custom Robotic Environments</li>
+                    <li><span class="tech-icon opencv-icon"></span>RVIS</li>
+                    <li><span class="tech-icon aruco-icon"></span>ROS</li>
+                    <li><span class="tech-icon grasp-icon"></span>Deep Reinforcement Learning</li>
+                    <li><span class="tech-icon grasp-icon"></span>Genetic Algorithm</li>
+                </ul>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/nickhward/ga-her-ddpg" target="_blank">
+                    <img src="/assets/img/github.png" alt="View on GitHub" />
+                </a>
+            </div>
+        </section>
+        
+        <!-- First major point -->
+        <section class="point">
+            <h2>Pick and Place Task</h2>
+            <div class="img-group">
+                <img src="/assets/img/pickplace_robot.png" alt="Description of image 2a">
+                <img src="/assets/img/pickplace_res.png" alt="Description of image 2b">
+            </div>
+            <p>The GA-DRL approach converges by epoch 30, whereas the standard DRL method takes until epoch 80. This indicates that, with our proposed hyperparameter selection technique, convergence is achieved 2.67 times more quickly than when using the original hyperparameters.</p>
+        </section>
+        
+        <!-- Second major point -->
+        <section class="point">
+            <h2>Pushing to Target Task</h2>
+            <div class="img-group">
+                <img src="/assets/img/push_robot.png" alt="Description of image 2a">
+                <img src="/assets/img/push_results.png" alt="Description of image 2b">
+            </div>
+            <p>The GA-DRL approach converges by epoch 10, whereas the standard DRL method takes until epoch 20. This indicates that, with our proposed hyperparameter selection technique, convergence is achieved two times more quickly than when using the original hyperparameters.</p>
+        </section>
+        
+        <!-- Third major point -->
+        <section class="point">
+            <h2>Simulation GA-DRL Training</h2>
+            <img src="/assets/img/simulated_arm.png" alt="Description of image 2a">
+            <p>To expedite the training process and achieve efficiency, we utilized simulated environments for tasks. This approach allowed us to accelerate movements without being constrained by the limitations of real motors and related hardware.</p>
+        </section>
+
+        <section class="point">
+            <h2>Simulation to Reality Inference</h2>
+            <img src="/assets/img/drl_real.png" alt="Description of image 2a">
+            <p>We're able to store the model and subsequently apply it to the real-world robot, transitioning from the simulation. The results in practice are impressively effective.</p>
+        </section>
+        
+
+        
+    </div>
+</body>
+</html>
