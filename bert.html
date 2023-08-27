@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubo Pick and Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 7% auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2C3E50;
+            font-size: 3em;
+            margin-bottom: 1.5em;
+        }
+
+        .point {
+            margin: 4rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-bottom: 2px solid #eee;
+        }
+
+        .point:hover {
+            background-color: #ecf0f1;
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .img-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .point img:hover {
+            transform: scale(1.05);
+        }
+
+        .intro, .conclusion {
+            background-color: #f4f4f4;
+            padding: 2rem 2rem 1rem;
+        }
+
+        .tech-stack {
+    margin: 2rem 0;
+}
+
+    .tech-stack h3 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+
+    .tech-stack ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .tech-stack li {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: bold;
+        color: #2980b9;
+    }
+
+    .github-link {
+        margin-top: 1rem;
+    }
+
+    .github-link img {
+        width: 60px;  /* Adjust size as needed */
+        height: auto;
+        border-radius: 10%;  /* If you want a circular icon */
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .github-link img:hover {
+        transform: scale(1.6);
+    }
+
+    .tech-stack {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+.tech-stack h3 {
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-stack li {
+    margin: 0.5em 1em;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.tech-stack li:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.cplusplus-icon {
+    background-image: url('path/to/cplusplus-icon.png');
+}
+.yolo-icon {
+    background-image: url('path/to/yolo-icon.png');
+}
+
+
+.apple-metrics {
+    font-family: 'San Francisco', Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.apple-metrics h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.apple-metrics table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.apple-metrics th,
+.apple-metrics td {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.train-header,
+.train {
+    color: #007aff;
+    font-weight: bold;
+}
+
+.val-header,
+.val {
+    color: #ff3b30;
+    font-weight: bold;
+}
+
+.metric-name {
+    text-align: left;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <h1>CareerBERT</h1>
+            <p>
+                The aim of this project is to employ natural language processing with a BERT model to categorize sentences into specific groups, such as skills, education, and job responsibilities. The model will then assess user resumes for compatibility based on a similarity score</p>
+            <div class="tech-stack">
+                <h3>Technology Stack:</h3>
+                <ul>
+                    <li><span class="tech-icon cplusplus-icon"></span>Python</li>
+                    <li><span class="tech-icon yolo-icon"></span>PyTorch</li>
+                    <li><span class="tech-icon ros-icon"></span>Flask</li>
+                    <li><span class="tech-icon opencv-icon"></span>Large Language Model</li>
+                </ul>
+            </div>
+            <p>
+                Click icon for GitHub project:
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/nickhward/CareerBERT" target="_blank">
+                    <img src="/assets/img/github.png" alt="View on GitHub" />
+                </a>
+            </div>
+        </section>
+        
+        <!-- Third major point -->
+        <section class="point">
+            <h2>Example Model Selection</h2>
+            <div class="img-group">
+                <img src="/assets/img/f1_graph.png" alt="Description of image 2a">
+                <img src="/assets/img/confusionmatrix.png" alt="Description of image 2b">
+            </div>
+
+            <!-- Paragraph 1: About Model Performance -->
+            <p>
+                The model exhibits strong performance. As anticipated, the validation results are slightly lower than the training results, hinting at mild overfitting. However, an 83% validation accuracy remains acceptable. The minor overfitting can be attributed to the size of the dataset.
+            </p>
+
+            <!-- Paragraph 2: Emphasis on F1 Score -->
+            <p>
+                More importantly, I place a greater emphasis on the F1 score, especially because of the class imbalance. The F1 score is particularly suitable for addressing class imbalances because it provides a balanced measure of precision and recall. In situations with class imbalance, accuracy can be misleading. For instance, if 95% of a dataset belongs to Class A and only 5% to Class B, a model that predicts every instance as Class A would still achieve 95% accuracy, even though it fails to identify any of Class B. The F1 score, on the other hand, considers both false positives and false negatives, offering a more comprehensive view of the model's performance across all classes.
+            </p>
+            <div class="apple-metrics">
+                <h3>Final Metrics</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="train-header">Training</th>
+                            <th class="val-header">Validation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="metric-name">Accuracy</td>
+                            <td class="train">0.952</td>
+                            <td class="val">0.828</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">Precision</td>
+                            <td class="train">0.952</td>
+                            <td class="val">0.828</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">Recall</td>
+                            <td class="train">0.952</td>
+                            <td class="val">0.828</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">F1 Score</td>
+                            <td class="train">0.952</td>
+                            <td class="val">0.828</td>
+                        </tr>
+            
+                        <!-- Similar rows for Precision, Recall, F1 -->
+                    </tbody>
+                </table>
+                <!-- Repeat similar divs for Precision, Recall, and F1 -->
+            </div>
+        </section>
+
+        <section class="point">
+            <h2>Final Results</h2>
+            <div class="img-group">
+                <img src="/assets/img/robot.gif" alt="Description of image 2a">
+                <img src="/assets/img/robot_final.gif" alt="Description of image 2b">
+            </div>
+            <p>After completing the aforementioned steps, the robot is now ready to move towards and pick up the object designated by the user.</p>
+        </section>
+
+        <!-- First major point -->
+        <section class="point">
+            <h2>Object Detection</h2>
+            <div class="img-group">
+                <img src="/assets/img/uploading.gif" alt="Description of image 2a">
+                <img src="/assets/img/processing.gif" alt="Description of image 2b">
+            </div>
+            <p>Here is an example of uploading and processing your resume. Then finding the similarity between each job posting in the Data Science Indeed postings and your resume that was uploaded</p>
+        </section>
+        
+       
+        
+        
+   
+    </div>
+</body>
+</html>
