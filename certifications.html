@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 5% auto;
+            padding: 0 15px;
+        }
+
+        h1 {
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .certificate {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .certificate:hover {
+            transform: translateY(-10px);
+        }
+
+        .certificate img {
+            max-width: 100%;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .certificate:hover img {
+            opacity: 0.85;
+        }
+
+        .certificate-title {
+            margin-top: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Certifications</h1>
+        <div class="certificates">
+            <!-- Certificate 1 -->
+
+            <div class="certificate">
+                <img src="./assets/certificates/scale_datascience.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Fundamentals of Scalable Data Science</h3>
+            </div>
+
+            <div class="certificate">
+                <img src="./assets/certificates/tableau.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Fundementals of Visualization with Tableau</h3>
+            </div>
+
+            <div class="certificate">
+                <img src="./assets/certificates/ml_proj.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Structuring Machine Learning Projects</h3>
+            </div>
+
+            <div class="certificate">
+                <img src="./assets/certificates/conv_tensorflow.jpg" alt="Certificate 1">
+                <h3 class="certificate-title">Convolutional Neural Networks in TensorFlow</h3>
+            </div>
+            
+            <!-- Certificate 2 -->
+            <div class="certificate">
+                <img src="./assets/certificates/intro_tensorflow.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Inroduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</h3>
+            </div>
+
+            <div class="certificate">
+                <img src="./assets/certificates/nlp_tensorflow.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Natural Language Processing in TensorFlow</h3>
+            </div>
+
+             <div class="certificate">
+                <img src="./assets/certificates/nns.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Neural Networks and Deep Learning</h3>
+            </div>
+
+
+            <div class="certificate">
+                <img src="./assets/certificates/hyperparams.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Improving Deep Neural Networks Hyperparameter Tuning, Regularization, and Optimization</h3>
+            </div>
+
+
+            <div class="certificate">
+                <img src="./assets/certificates/conv_nn.jpg" alt="Certificate 2">
+                <h3 class="certificate-title">Convolutional Neural Networks</h3>
+            </div>
+
+
+           
+            <!-- Add more certificates similarly -->
+
+        </div>
+    </div>
+</body>
+</html>
