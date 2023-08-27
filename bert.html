@@ -214,6 +214,66 @@
     color: #333;
 }
 
+.code-showcase {
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Add this */
+}
+
+.code-section pre {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-section {
+    padding: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.result-section p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.result-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.result-section li {
+    margin-bottom: 4px;
+}
+
+.result-section li strong {
+    color: #007aff; /* Color emphasis for the dominant class */
+}
+
+.code-section pre {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #abb2bf;
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Wrap text as needed */
+}
+
+
+
+.kw { color: #e06c75; }
+.str { color: #98c379; }
+.func { color: #61afef; }
+.cmt { color: #5c6370; font-style: italic; }
+
     </style>
 </head>
 <body>
@@ -229,6 +289,7 @@
                     <li><span class="tech-icon yolo-icon"></span>PyTorch</li>
                     <li><span class="tech-icon ros-icon"></span>Flask</li>
                     <li><span class="tech-icon opencv-icon"></span>Large Language Model</li>
+                    <li><span class="tech-icon opencv-icon"></span>Docano (Sentence Labeling)</li>
                 </ul>
             </div>
             <p>
@@ -299,17 +360,35 @@
         </section>
 
         <section class="point">
-            <h2>Final Results</h2>
-            <div class="img-group">
-                <img src="/assets/img/robot.gif" alt="Description of image 2a">
-                <img src="/assets/img/robot_final.gif" alt="Description of image 2b">
+            <h2>Example Classification of a Sentence</h2>
+            
+            <div class="code-showcase">
+                <div class="code-section">
+                    <pre>
+                        <span class="kw">sentence</span> = <span class="str">'''
+                        We’re redefining excellent customer experiences. Data drives that process.
+                        '''</span>
+                        <span class="kw">predicted_label</span> = classifier.<span class="func">predict</span>(<span class="kw">sentence</span>)
+                        <span class="kw">print</span>(<span class="kw">predicted_label</span>)  <span class="cmt"># Will print the index of the label, e.g. 2 for JOBDES</span>
+                                    </pre>
+                </div>
+                <div class="result-section">
+                    <p>Output:</p>
+                    <ul>
+                        <li>Class 0: 0.00%</li>
+                        <li>Class 1: 0.21%</li>
+                        <li><strong>Class 2: 99.78%</strong></li> <!-- Bold for emphasis on the high score -->
+                        <li>Class 3: 0.01%</li>
+                    </ul>
+                </div>
             </div>
-            <p>After completing the aforementioned steps, the robot is now ready to move towards and pick up the object designated by the user.</p>
+
+            <p>Here's a sample sentence extracted from a Data Science job listing on Indeed. I've tested multiple sentences, and the model consistently demonstrates high confidence in its classifications, as evident in this example.</p>
         </section>
 
         <!-- First major point -->
         <section class="point">
-            <h2>Object Detection</h2>
+            <h2>Flask App</h2>
             <div class="img-group">
                 <img src="/assets/img/uploading.gif" alt="Description of image 2a">
                 <img src="/assets/img/processing.gif" alt="Description of image 2b">
