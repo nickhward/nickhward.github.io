@@ -232,10 +232,6 @@ button:disabled {
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Panasonic Final Internship Report</h1>
-    </header>
-
     <div class="container">
         <section class="intro">
             <h1>Deep Reinforcement Learning Hyperparameter Optimization Utilizing Genetic Algorithms</h1>
@@ -244,39 +240,45 @@ button:disabled {
                 <h3>Technology Stack:</h3>
                 <ul>
                     <li><span class="tech-icon cplusplus-icon"></span>Python</li>
-                    <li><span class="tech-icon yolo-icon"></span>OpenAI Robotic Environments</li>
-                    <li><span class="tech-icon ros-icon"></span>Custom Robotic Environments</li>
-                    <li><span class="tech-icon opencv-icon"></span>RVIS</li>
-                    <li><span class="tech-icon aruco-icon"></span>ROS</li>
-                    <li><span class="tech-icon grasp-icon"></span>Deep Reinforcement Learning</li>
-                    <li><span class="tech-icon grasp-icon"></span>Genetic Algorithm</li>
+                    <li><span class="tech-icon yolo-icon"></span>SQL</li>
+                    <li><span class="tech-icon ros-icon"></span>Flask</li>
+                    <li><span class="tech-icon opencv-icon"></span>NLP</li>
+                    <li><span class="tech-icon aruco-icon"></span>ETL</li>
+                    <li><span class="tech-icon grasp-icon"></span>Data Analysis</li>
                 </ul>
             </div>
-            <div class="github-link">
-                <a href="https://github.com/nickhward/ga-her-ddpg" target="_blank">
-                    <img src="/assets/img/github.png" alt="View on GitHub" />
-                </a>
-            </div>
+           
         </section>
         
         <!-- First major point -->
         <section class="point">
             <h2>Pick and Place Task</h2>
-            <div class="img-group">
-                <img src="/assets/img/pickplace_robot.png" alt="Description of image 2a">
-                <img src="/assets/img/pickplace_res.png" alt="Description of image 2b">
-            </div>
-            <p>The GA-DRL approach converges by epoch 30, whereas the standard DRL method takes until epoch 80. This indicates that, with our proposed hyperparameter selection technique, convergence is achieved 2.67 times more quickly than when using the original hyperparameters.</p>
+    
+            <img src="/assets/img/model_flow.png" alt="Description of image 2b">
+         
+            <p>The model's process began with data extraction from the Panasonic MySQL server. After extraction, I conducted thorough data cleaning to ensure accuracy. I then analyzed the cleaned data to identify key patterns and insights. Finally, I fed the prepared data into an Ensemble machine learning model for further analysis.</p>
         </section>
         
-        <!-- Second major point -->
+        <!-- NLP Data Cleansing Techniques -->
         <section class="point">
-            <h2>Pushing to Target Task</h2>
-            <div class="img-group">
-                <img src="/assets/img/push_robot.png" alt="Description of image 2a">
-                <img src="/assets/img/push_results.png" alt="Description of image 2b">
+            <h2>NLP Data Cleansing Techniques</h2>
+            <div class="content-group">
+                <h3>1. Tokenization</h3>
+                <p>Tokenization is the process of splitting a large paragraph into sentences or words. This is often the first step in text preprocessing.</p>
+                
+                <h3>2. Removing Stop Words</h3>
+                <p>Stop words like 'and', 'the', 'is', etc., are frequently occurring words that don't carry significant meaning on their own. Removing them can help in reducing the dimensionality.</p>
+
+                <h3>3. Stemming & Lemmatization</h3>
+                <p>These techniques are used to reduce words to their base/root form. For example, 'running' to 'run'. While stemming cuts off prefixes/suffixes, lemmatization considers the context and converts the word to its meaningful base form.</p>
+
+                <h3>4. Removing Special Characters and Numbers</h3>
+                <p>Special characters and numbers are usually removed from the text data as they generally don't contribute to word semantics.</p>
+
+                <h3>5. Lowercasing</h3>
+                <p>Converting all characters in the text to lowercase ensures that words like 'Hello' and 'hello' are considered the same.</p>
             </div>
-            <p>The GA-DRL approach converges by epoch 10, whereas the standard DRL method takes until epoch 20. This indicates that, with our proposed hyperparameter selection technique, convergence is achieved two times more quickly than when using the original hyperparameters.</p>
+            <p>In summary, cleansing data in NLP is crucial for building efficient and accurate models. Each preprocessing step prepares the text data, making it a more suitable input for models.</p>
         </section>
         
         <!-- Third major point -->
