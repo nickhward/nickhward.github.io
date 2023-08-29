@@ -487,6 +487,7 @@ img {
     padding: 4rem 0 2rem;
   }
   .home__social {
+    width: 100%;
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
