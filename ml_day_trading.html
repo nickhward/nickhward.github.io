@@ -196,14 +196,31 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
+.train-header,
+.train {
+    color: #007aff;
+    font-weight: bold;
+}
+
+.val-header,
+.val {
+    color: #ff3b30;
+    font-weight: bold;
+}
+
+.metric-name {
+    text-align: left;
+    color: #333;
+}
+
 
     </style>
 </head>
 <body>
     <div class="container">
         <section class="intro">
-            <h1>Day Tradin Bot and Machine Learning</h1>
-            <p>Created multiple trading bots based on popular trading strategies. Then trying to use Machine Learning to predict if the trade was going to be a win or a loss.</p>
+            <h1>Day Trading Bot and Machine Learning Classification</h1>
+            <p>Created multiple trading bots based on popular trading strategies. Then attempting to use Machine Learning to predict if the trade was going to be a win or a loss.</p>
             <div class="tech-stack">
                 <h3>Technology Stack:</h3>
                 <ul>
@@ -217,7 +234,7 @@
             <p>View on GitHub:</p>
 
             <div class="github-link">
-                <a href="https://github.com/nickhward/ga-her-ddpg" target="_blank">
+                <a href="https://github.com/nickhward/ML_Trading_methods" target="_blank">
                     <img src="/assets/img/github.png" alt="View on GitHub" />
                 </a>
             </div>
@@ -232,23 +249,17 @@
         </section>
 
         <section class="point">
-            <h2>Simulation to Reality Inference</h2>
+            <h2>BackTest Data and Tableau</h2>
             <img src="/assets/img/macd_tableau.png" alt="Description of image 2a">
-            <p>I conducted a backtest using the MACD bot on five years' worth of US30 data. Additionally, I performed a detailed analysis using Tableau to observe the bot's trading profitability and patterns. This rigorous backtesting and data gathering process was applied to every trading strategy, laying the foundation for my machine learning model.</p>
+            <p>I conducted a backtest using the MACD bot on five years worth of US30 data. Additionally, I performed a detailed analysis using Tableau to observe the bot's trading profitability and patterns. This rigorous backtesting and data gathering process was applied to every trading strategy, laying the foundation for my machine learning model.</p>
         </section>
 
         <section class="point">
-            <h2>Simulation to Reality Inference</h2>
-            <img src="/assets/img/macd_tableau.png" alt="Description of image 2a">
-            <p>I conducted a backtest using the MACD bot on five years' worth of US30 data. Additionally, I performed a detailed analysis using Tableau to observe the bot's trading profitability and patterns. This rigorous backtesting and data gathering process was applied to every trading strategy, laying the foundation for my machine learning model.</p>
-        </section>
-
-        <section class="point">
-            <h2>Model Performance</h2>
+            <h2>Model Binary Classification Performance</h2>
             
             <p>The dataset, which includes Open, Close, High, and Low values, covers around 900 individual trades. I used the XGBoost machine learning model for this analysis because it works well with tabular data and can handle imbalanced datasets. The trading strategy had more losses than wins, leading to an imbalanced data set. </p>
             
-            <p>There's a clear difference in performance between the training and test sets, hinting at possible overfitting. I believe this overfitting is due to the limited size of our dataset. If we had access to more comprehensive data for Open, Close, Low, and High values, we could improve our model through more extensive backtesting.</p>
+            <p>To be clear this is a binary classification problem as I am trying to predict if a trade will be a win or a loss. In the model results there's a clear difference in performance between the training and test sets, hinting at possible overfitting. I believe this overfitting is due to the limited size of our dataset. If we had access to more comprehensive data for Open, Close, Low, and High values, we could improve our model through more extensive backtesting.</p>
 
             <div class="apple-metrics">
                 <h3>Final Metrics</h3>
