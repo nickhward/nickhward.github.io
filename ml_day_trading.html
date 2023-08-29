@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Trade Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 7% auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2C3E50;
+            font-size: 3em;
+            margin-bottom: 1.5em;
+        }
+
+        .point {
+            margin: 4rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-bottom: 2px solid #eee;
+        }
+
+        .point:hover {
+            background-color: #ecf0f1;
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2980b9;
+            font-size: 2.2em;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .img-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .point img:hover {
+            transform: scale(1.05);
+        }
+
+        .intro, .conclusion {
+            background-color: #f4f4f4;
+            padding: 2rem 2rem 1rem;
+        }
+
+        .tech-stack {
+    margin: 2rem 0;
+}
+
+    .tech-stack h3 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+
+    .tech-stack ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .tech-stack li {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: bold;
+        color: #2980b9;
+    }
+
+    .github-link {
+        margin-top: 1rem;
+    }
+
+    .github-link img {
+        width: 60px;  /* Adjust size as needed */
+        height: auto;
+        border-radius: 10%;  /* If you want a circular icon */
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .github-link img:hover {
+        transform: scale(1.6);
+    }
+
+    .tech-stack {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+.tech-stack h3 {
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-stack li {
+    margin: 0.5em 1em;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.tech-stack li:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.cplusplus-icon {
+    background-image: url('path/to/cplusplus-icon.png');
+}
+.yolo-icon {
+    background-image: url('path/to/yolo-icon.png');
+}
+
+.apple-metrics {
+    font-family: 'San Francisco', Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.apple-metrics h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.apple-metrics table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.apple-metrics th,
+.apple-metrics td {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <h1>Day Tradin Bot and Machine Learning</h1>
+            <p>Created multiple trading bots based on popular trading strategies. Then trying to use Machine Learning to predict if the trade was going to be a win or a loss.</p>
+            <div class="tech-stack">
+                <h3>Technology Stack:</h3>
+                <ul>
+                    <li><span class="tech-icon cplusplus-icon"></span>Python</li>
+                    <li><span class="tech-icon yolo-icon"></span>Tableau</li>
+                    <li><span class="tech-icon ros-icon"></span>MetaTrader API</li>
+                    <li><span class="tech-icon opencv-icon"></span>scikit-learn</li>
+                </ul>
+            </div>
+
+            <p>View on GitHub:</p>
+
+            <div class="github-link">
+                <a href="https://github.com/nickhward/ga-her-ddpg" target="_blank">
+                    <img src="/assets/img/github.png" alt="View on GitHub" />
+                </a>
+            </div>
+        </section>
+        
+               
+        <!-- Third major point -->
+        <section class="point">
+            <h2>Example MACD Buy Strategy</h2>
+            <img src="/assets/img/macdbuy.png" alt="Description of image 2a">
+            <p>One example of a bot I developed is based on the popular MACD crossover trading strategy. This strategy is a rules-based system. When the price surpasses the exponential moving average and the MACD signal line crosses the center line, a buy is triggered using the MetaTrader python API.</p>
+        </section>
+
+        <section class="point">
+            <h2>Simulation to Reality Inference</h2>
+            <img src="/assets/img/macd_tableau.png" alt="Description of image 2a">
+            <p>I conducted a backtest using the MACD bot on five years' worth of US30 data. Additionally, I performed a detailed analysis using Tableau to observe the bot's trading profitability and patterns. This rigorous backtesting and data gathering process was applied to every trading strategy, laying the foundation for my machine learning model.</p>
+        </section>
+
+        <section class="point">
+            <h2>Simulation to Reality Inference</h2>
+            <img src="/assets/img/macd_tableau.png" alt="Description of image 2a">
+            <p>I conducted a backtest using the MACD bot on five years' worth of US30 data. Additionally, I performed a detailed analysis using Tableau to observe the bot's trading profitability and patterns. This rigorous backtesting and data gathering process was applied to every trading strategy, laying the foundation for my machine learning model.</p>
+        </section>
+
+        <section class="point">
+            <h2>Model Performance</h2>
+            
+            <p>The dataset, which includes Open, Close, High, and Low values, covers around 900 individual trades. I used the XGBoost machine learning model for this analysis because it works well with tabular data and can handle imbalanced datasets. The trading strategy had more losses than wins, leading to an imbalanced data set. </p>
+            
+            <p>There's a clear difference in performance between the training and test sets, hinting at possible overfitting. I believe this overfitting is due to the limited size of our dataset. If we had access to more comprehensive data for Open, Close, Low, and High values, we could improve our model through more extensive backtesting.</p>
+
+            <div class="apple-metrics">
+                <h3>Final Metrics</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="train-header">Training</th>
+                            <th class="val-header">Validation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="metric-name">Accuracy</td>
+                            <td class="train">0.762</td>
+                            <td class="val">0.455</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">Precision</td>
+                            <td class="train">0.641</td>
+                            <td class="val">0.385</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">Recall</td>
+                            <td class="train">0.997</td>
+                            <td class="val">0.586</td>
+                        </tr>
+                        <tr>
+                            <td class="metric-name">F1 Score</td>
+                            <td class="train">0.777</td>
+                            <td class="val">0.462</td>
+                        </tr>
+            
+                        <!-- Similar rows for Precision, Recall, F1 -->
+                    </tbody>
+                </table>
+                <!-- Repeat similar divs for Precision, Recall, and F1 -->
+            </div>
+        </section>
+        
+
+        
+    </div>
+</body>
+</html>
